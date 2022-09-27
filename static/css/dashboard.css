@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #F1CFDA;
+    --site-color: #5A0720;
+    --header-color: #BF38B2;
+    
+    --whitetext-color: #CDBCCC;
+    --whitetext: #ffffff;
+    --quinn: #E64C00;
+    --daisies: #AA0000;
+    --second-quinn: #009000;
+    --second-daisies: #FFAA00;
+    --text-color: #343427;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    background-color: var(--whitetext);
+}
+
+.dashboard_container{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.dashboard_container_header{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: var(--text-color);
+}
+
+.dashboard_container_header h1{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--quinn);
+    text-align: center;
+}
+
+.dashboard_container_header p{
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--whitetext-color);
+    text-align: center;
+}
+
+.dashboard_header_section_box{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: var(--text-color);
+    display: inline-grid;
+    width: 100%;
+    height: auto;
+}
+
+.dashboard_header_section{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3%;
+    display: flex;
+}
+
+.dashboard_header_section_img{
+    width: 100px;
+    height: 80px;
+}
+
+.dashboard_header_section_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.dashboard_header_section_content{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.dashboard_header_section_content h1{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--quinn);
+    text-align: left;
+}
+
+.dashboard_header_section_content p{
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--whitetext-color);
+    text-align: left;
+}
+
+.dashboard_header_section_content span{
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--daisies);
+    text-align: left;
+}
+
+.dashboard_header_section_box a{
+    text-decoration: none;
+    color: var(--quinn);
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 1px solid var(--daisies);
+    padding: 3%;
+    width: 94%;
+    margin: 5px;
+}
+
+.dashboard_header_section_box a:hover{
+    background: var(--text-color);
+    color: var(--quinn);
+    border: 1px solid var(--quinn);
+}
+
+.dashboard_header_section_box a i{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: auto;
+    float: right;
+}
+
+.dashboard_header_section_text{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background: var(--text-color);
+    padding: 10px;
+}
+
+.dashboard_header_section_text h1{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--quinn);
+    padding: 5px 0;
+}
+
+.dashboard_header_section_text h2{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--whitetext-color);
+}
+
+.dashboard_header_section_text h2 span{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--quinn);
+}
+
+.dashboard_header_section_text p{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--whitetext-color);
+    padding: -10px auto;
+}
+
+.dashboard_header_section_text p span{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--quinn);
+}
+
+.dashboard_result_datapage{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background: var(--text-color);
+}
+
+.dashboard_result_datapage_content{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.dashboard_result_datapage_content h2{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--quinn);
+}
+
+.dashboard_result_datapage_content p{
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--daisies);
+    padding-left: 10px;
+}
+
+.dashboard_result_datapage_content_box{
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background: var(--text-color);
+}
+
+.dashboard_header_section_text_section{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.dashboard_header_section_text_section h3{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--quinn);
+}
+
+.dashboard_header_section_text_section span{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.table_header{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--quinn);
+}
+
+.table_content{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.dashboard_result_datapage_content_subtitle h4{
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: left;
+    color: var(--quinn);
+}
+
+.dashboard_result_datapage_content_subtitle{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.dashboard_result_datapage_content_subtitle .row .col-md-4 p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 5px;
+    color: var(--text-color);
+}
+
+.dashboard_result_datapage_content_subtitle .row .col-md-6 h3{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--green-color);
+    text-align: left;
+    padding: 10px;
+}
+
+.dashboard_result_datapage_content_subtitle .row .col-md-6 p{
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: left;
+    padding: 5px;
+}
+
+.dashboard_footer{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+.dashboard_footer span{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--quinn);
+    padding: 10px;
+}
+
+.information{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.information h3{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--quinn);
+    text-align: left;
+}
+
+.information p{
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--whitetext-color);
+    text-align: left;
+}
+
+.information li{
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--quinn);
+    list-style: none;
+}
+
+.information li strong{
+    font-size: 0.8rem;
+    color: var(--daisies);
+}
+
+.table_content_fee{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--whitetext-color);
+}
+
+.table_content_total{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--quinn);
+}
+
+@media only screen and (max-width: 1280px){
+    .dashboard_container{
+        margin: 13% auto;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .dashboard_container{
+        margin: 16% auto;
+    }
+    .dashboard_header_section{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .dashboard_header_section_img{
+        width: 100%;
+        height: 100%;
+    }
+    .dashboard_header_section_content{
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        width: 85%;
+        height: 100%;
+    }
+    .dashboard_result_datapage{
+        margin: 5px;
+    }
+    .dashboard_result_datapage_content_box{
+        margin: auto;
+    }
+    .dashboard_result_datapage_content h2{
+        padding: 10px;
+    }
+    .dashboard_result_datapage_content p{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .dashboard_container{
+        margin: 17% auto;
+    }
+    .dashboard_header_section{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .dashboard_header_section_img{
+        width: 100%;
+        height: 100%;
+    }
+    .dashboard_header_section_content{
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        width: 75%;
+        height: 100%;
+    }
+    .dashboard_header_section_text{
+        width: 230px;
+        margin-left: -3%;
+    }
+    .dashboard_result_datapage{
+        margin: 5px;
+        width: 485px;
+        margin-left: -4%;
+    }
+    .dashboard_result_datapage_content_box{
+        margin: auto;
+    }
+    .dashboard_result_datapage_content h2{
+        padding: 10px;
+    }
+    .dashboard_result_datapage_content p{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .dashboard_container{
+        margin: 17% auto;
+    }
+    .dashboard_header_section{
+        display: none;
+    }
+    .dashboard_header_section_text{
+        width: 210px;
+        margin-left: -6%;
+    }
+    .dashboard_result_datapage{
+        margin: 25% 5px;
+        width: 485px;
+        margin-left: -4%;
+    }
+    .dashboard_result_datapage_content_box{
+        margin: auto;
+    }
+    .dashboard_result_datapage_content h2{
+        padding: 10px;
+    }
+    .dashboard_result_datapage_content p{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .dashboard_container{
+        margin: 17% auto;
+    }
+    .dashboard_header_section{
+        display: none;
+    }
+    .dashboard_header_section_text{
+        width: 200px;
+        margin-left: -10%;
+        margin-right: -14%;
+    }
+    .dashboard_result_datapage{
+        margin: 25% 5px;
+        width: 485px;
+        margin-left: -4%;
+    }
+    .dashboard_result_datapage_content_box{
+        margin: auto;
+    }
+    .dashboard_result_datapage_content h2{
+        padding: 10px;
+    }
+    .dashboard_result_datapage_content p{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .dashboard_header_section_text{
+        width: 96%;
+        margin: 10px;
+    }
+    .dashboard_result_datapage{
+        width: 96%;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .dashboard_result_datapage{
+        width: 100%;
+        margin: 10px;
+    }
+    .table-striped{
+        width: 80%;
+    }
+}

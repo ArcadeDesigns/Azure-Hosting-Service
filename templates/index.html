@@ -1,0 +1,335 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+    <header>
+      <section class="header_container">
+        <div class="header_container_section">
+          <div class="header_container_img">
+            <img src="static/images/daisieskindle1.jpg" id=slideImg>
+            <div class="header_content">
+              <h1>QUINN&nbsp;&nbsp;<span>DAISIES</span> </h1>
+              <center><p>Website Development | Software Programming | Search Engine Optimization Services | Website Auditing and Analysis | Backlink Services | Fullstack Development and Programming | Python Programming | Affiliate Marketting.<a href="">Explore More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a></p></center>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service_section">
+        <p>Check out the list of our products and services offered to our distinguish clients.</p>
+
+        <div class="service_section_container">
+          <div class="service_section_container_box">
+            <h2>Wesite Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+          <div class="service_section_container_box">
+            <h2>Search Engine Optimization</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+          <div class="service_section_container_box">
+            <h2>Software Programming</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="main_content">
+        <h2>View Our Blog Post</h2>
+        <p>Latest Services and Information of various set ups and services offered by&nbsp;&nbsp;<span>QUINN DAISIES</span></p>
+        <div class="row">
+          <div class="col-md-10">
+            <div class="hero">
+              <div class="header_column">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h2>Latest Post Update</h2>
+                    <p>Search Engine Optimization Services ( Backlinks )</p>
+                  </div>
+
+                  <div class="col-md-2">
+                    <a href="posts.html">View All Post</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/console.jpg')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>The Role of Sitemap and Google Console in Search Engine Optimization</h3>
+
+                    <p>
+                      Search Engine Optimization is determined by various factors, ranging from the structure of the website to the proper use of headers and other compulsory elements of a well designed website. When it comes to the elements involved in ensuring Search Engine Optimization, the principles of Meta Tags comes to mind for website developers and for bloggers the principles of social media influencing and promotions. There are also website capable of generating huge organic traffic, of course for a certain price, however this is not advisable as this would in time weaken the website projective force and the future to ascertain real influence by engaging with targeted audience, this process does not also guarantee any real dissemination of information prospect or search hits on Google Search Engine;
+                    </p>
+
+                    <a href=" {{ url_for('searchengineoptimization') }} ">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/keyword.jpg')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>Optimization to the Fullest: Making Use of Effective Search Engine Optimization tools</h3>
+
+                    <p>
+                      Search engine optimization and its vast importance to the generation of website traffic and search engine hits can never be over stated. From the importance of page structure, to proper naming of header tags and labels to the inclusion of sitemaps and proper algorithmic arrangement of contents articles and flow of web pages, search engine optimization needs them all because it is serious business.
+                    </p>
+
+                    <a href=" {{ url_for('optimization_fullest') }} ">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/adsense.png')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>Google Adsense and Monetization of Web Content</h3>
+
+                    <p>
+                      Web blogging seems to be a lucrative business flooding the internet with various blog site created with content monetization being the major aim. However this process could sometimes be tricky as most individuals are known to be money oriented at the detriment of original and professional content and information to be passed.
+                    </p>
+
+                    <a href=" {{ url_for('googleadsense') }} ">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/ccpa.jpg')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>Getting your Website Approved for Google Adsense</h3>
+
+                    <p>
+                      When it comes to website policies concerning the usage and collection of data, there are certain policies to put in mind, ranging from the Terms of Usage and Services to Cookie Policies, Privacy Policies, or Disclaimer post, all this details are necessary and very important. In line with the monetization of content, specifically in relation to Google Adsense approval, these policies are very crucial.
+                    </p>
+
+                    <a href=" {{ url_for('ccpa') }} ">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/affiliate.jpg')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>Diversifying Online Income through Product Marketing</h3>
+
+                    <p>
+                      If you ask any website manager or blogger how they generate sustainable income from post and contents on their websites or blogs, most of them would tell you, it’s actually the result of advertising as the major source of income, monetization of traffic, or getting personalized advert contracts etc. Advert placement on web contents and blog post can be indeed lucrative with the generation of passive and sustainable income.
+                    </p>
+
+                    <a href=" {{ url_for('affiliate_marketing') }} ">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/content.jpg')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>Writers and a viable source of income</h3>
+
+                    <p>
+                      Content writers are one of the most paid writers in the world; you get paid to do what you see as a passion, converted into a means of livelihood. When it comes to content writing, a wide range of knowledge concerning various aspects of life and topics affecting the world at large is required. Although there are various aspects of writing which generates as much income as content writing, to mention a few;
+                    </p>
+
+                    <a href=" {{ url_for('content') }} ">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero">
+              <div class="ads">
+                <div class="ads_img">
+                  <img src="{{url_for ('static', filename='images/daisieskindle14.jpg')}}" alt="quinn daisies image from pexel">
+                </div>
+
+                <div class="ads_content">
+                  <h4>Get your Product Advert Page here</h4>
+                  <p>In a bid to promote greater reach to our clients on our products and our services, get every lates news update here.</p>
+
+                  <a href="">More Information&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="header_column">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h2>Trending Post</h2>
+                    <p>Important Post Articles</p>
+                  </div>
+
+                  <div class="col-md-2">
+                    <a href="posts.html">View All Post</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/politics.png')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>Nigeria Politics And The 2023 General Election</h3>
+
+                    <p>
+                      Nigeria over the years has been an exemplary image of democracy on the African continent upholding every principles of its system which includes; the principles of the fundamental human right, in line with the universal declaration (UDHR, 1945), the principles of legitimacy, independence of the judiciary and the electoral commission, as well as the conduct of a free and fair periodic election.
+                    </p>
+
+                    <a href="{{ url_for('democratic') }}">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/bitcoin.jpg')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>The World Of Crypto Currency</h3>
+
+                    <p>
+                      There is not a soul alive today that isn’t aware of the digital and crypto market with millions of investors and billions of dollars invested in this platform from its start a while back in 2009. The leading and first crypto currency, the Bitcoin has been a sensational talk on various social media. Various platforms as been designed to accommodate its operations and ensure all-round performance throughout the globe.
+                    </p>
+
+                    <a href="{{ url_for('cryptocurrency') }}">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="hero_container">
+                    <div class="hero_img">
+                      <img src="{{url_for ('static', filename='images/politics.jpg')}}" alt="quinn daisies image from pexel">
+                    </div>
+
+                    <h3>International Politics Hampering Ukraine’s Hope for Salvation</h3>
+
+                    <p>
+                      When it comes to the foreign sphere of nations and the assembly in court to pursue foreign policy and promote national interest, objects of thoughts like treaties, diplomatic ties, alliance, and espionage comes to light. However secretive this principles maybe and kept far away from public view and public reach, the fact remains that it still exist and constitute a big part of the world survival and maintenance of global peace and fostering of global unity.
+                    </p>
+
+                    <a href="{{ url_for('global_prospect') }}">Read More&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-2">
+            <aside>
+              <div class="subscription_section">
+                <div class="subscription_container">
+                  <h3>Subscribe to Our Services</h3>
+                  <p>Get latest updates and Newsletters on our products and services.</p>
+                  <div class="subscription_form">
+                    <form>
+                      <div class="form_design">
+                        <i class="fa fa-key"></i>
+                        <input type="email" name="email">
+                      </div>
+
+                      <div class="form_design_btn">
+                        <input type="submit" name="submit" value="Subscribe" class="acc_btn">
+                      </div>
+                    </form>
+                  </div>
+                  <span>Contact Us via Social Media</span>
+                  <div class="social_media">
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-whatsapp"></i>
+                    <i class="bx bxl-instagram"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-gmail"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="aside_links">
+                <h3>Quick Link</h3>
+                <p>Get access to more products and services</p>
+                <div class="quick_link">
+                  <a href="{{ url_for('portfolio') }}">About Us</a>
+                  <a href="{{ url_for('portfolio') }}">Services</a>
+                  <a href="{{ url_for('portfolio') }}">Contact Us</a>
+                </div>
+              </div>
+
+              <div class="ads_section">
+                <div class="ads_box">
+                  <div class="ads_img">
+                    <img src="{{url_for ('static', filename='images/daisieskindle13.jpg')}}" alt="quinn daisies image from pexel">
+                  </div>
+
+                  <h4>Get your Product Advert Page here</h4>
+                  <p>In a bid to promote greater reach to our clients on our products and our services, get every lates news update here.</p>
+
+                  <a href="">More Information&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="service_info">
+                <h4>Check Out Our Products and Services Below</h4>
+
+                <div class="service_links">
+                  <a href=""> Backlink Services </a>
+                  <div class="line-footer"></div>
+                  <a href=""> Search Engine Optimization </a>
+                  <div class="line-footer"></div>
+                  <a href=""> Advertising With Us </a>
+                  <div class="line-footer"></div>
+                </div>
+              </div>
+
+
+              <div class="ads_section">
+                <div class="ads_box">
+                  <div class="ads_img">
+                    <img src="{{url_for ('static', filename='images/daisieskindle14.jpg')}}" alt="quinn daisies image from pexel">
+                  </div>
+
+                  <h4>Get your Product Advert Page here</h4>
+                  <p>In a bid to promote greater reach to our clients on our products and our services, get every lates news update here.</p>
+
+                  <a href="">More Information&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+{% endblock %}

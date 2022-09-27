@@ -1,0 +1,113 @@
+{% extends 'base.html' %} 
+	{% block content %}
+	<main>
+      <section class="dashboard_container">
+        <div class="dashboard_container_header">
+          <h1>Developer Portfolio</h1>
+          <p>View my Portfolio</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="dashboard_header_section_box">
+              <div class="dashboard_header_section">
+                <div class="dashboard_header_section_img">
+                    <img src="{{url_for ('static', filename='images/author.jpg')}}" alt="Profile Image Here">
+                </div>
+
+                <div class="dashboard_header_section_content">
+                  <h1><strong>Username:</strong> Ebire Folayemi Michael</h1>
+                  <p>Email: folayemiebire@gmail.com</p>
+                  <span>Tel: 08133568910;</span>
+                  <span>08170005839</span>
+                </div>
+              </div>
+              <hr/>
+              <a href=" {{ url_for('index') }} ">Home<i class="fa fa-home"></i></a>
+              <a href=" {{ url_for('googleadsense') }} ">Learn More about Google Adsense<i class="fa fa-blog"></i></a>
+              <a href=" {{ url_for('affiliate_marketing') }} ">Learn More about Affiliate Marketing<i class="fa fa-key"></i></a>
+              <a href=" {{ url_for('searchengineoptimization') }} ">Learn More about Search Engine Optimization<i class="fa fa-search"></i></a>
+              
+              <div class="information">
+                <h3>User Bio</h3>
+                <p>Fullstack Developer | Search Engine Optimization Expert | Website Developer | Software Programmer | Writer and Author | Poet.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+          	<div class="dashboard_header_section_text">
+          		<h1>User Profile</h1>
+          		<hr/>
+          		<h2><span>Language Proficiency:</span>&nbsp;&nbsp;HTML, Css, JavaScript, Git, Python, PyQt5, Qt Designer, Django, Flask</h2>
+          		<p><span>Database administration:</span>&nbsp;&nbsp;Sqlalchemy | Postgresql | Sql | Sqlite3 | MySql</p>
+              <p><span>Other Components:</span>&nbsp;&nbsp;Heroku Web Hosting | AWS EC3 | Infrastructure as Code | Object Oriented Programming | Git Version Control | Azure Cloud Services | Docker</p>
+              <p><span>Other Web Services</span>&nbsp;&nbsp;Wordpress | Blogspot</p>
+          		<p><span>Website:</span>&nbsp;&nbsp;https://www.quinndaisies.com</p>
+          		<p><span>Background:</span>&nbsp;&nbsp;Started from Wordpress with the brand name of <strong>Simplimism</strong>; before Migrating to Quinn Daisies. with over 5 years of experience in Website Development and Software Programming.</p>
+          		<hr/>
+
+          		<div class="dashboard_header_section_text_section">
+          			<div class="information">
+          				<h3>Website Details</h3>
+		                <p>This Web Application was developed with the aim to serve backlinks to various websites through articles posts and snippets. The Web Application uses specific guides and Professional tips to suggest the Meta Description length and Title Tag Length as well. Meant to fixed the problem of short title tags, meta description, and link URL. To further buttress this and solve the problem of poor Search Engine Optimization Results and Domain Ranking a System Software was created as well.</p>
+		            </div>
+          		</div>
+          	</div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="dashboard_header_section_box">
+              <div class="information">
+                <h3>Acheivements and Services</h3>
+                <p>Creation of a System Software which supports Contextual Translation of Words to over 100 languages, The Creation of another System Software to aid Search Engine Optimization Services, The development of Two Website, Two Web blogs, One E-commerce Store Site, One Backlink Site, A Rhodium Prize award in Poetry, The Publication of Multiple Books on Amazon Kindle.</p>
+              </div>
+
+              <div class="information">
+                <h3>Services</h3>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="table_header">Servies</th>
+                      <th scope="col" class="table_header">AMOUNT</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="table_header">Website Development</th>
+                      <td class="table_content_fee">Negotiable</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="table_header">Premium SEO Services</th>
+                      <td class="table_content_fee">Negotiable</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="table_header">Advertise With Us</th>
+                      <td class="table_content_fee">Negotiable</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="table_header">Premium Backlink Services</th>
+                      <td class="table_content_fee">Negotiable</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="table_header">Sponsored Posts</th>
+                      <td class="table_content_fee">Negotiable</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <a href="#">Make Payment Now</a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </section>
+    </main>
+	{% endblock %}

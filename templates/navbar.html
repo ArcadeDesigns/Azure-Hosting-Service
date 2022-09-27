@@ -1,0 +1,35 @@
+<nav class="navbar">
+  <div class="content_navbar">
+    <ul>
+      <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('posts') }}">View Articles</a></li>
+          <li><a href="{{ url_for('portfolio') }}">Contact Us</a></li>
+          <li><a href="{{ url_for('portfolio') }}">About Us</a></li>
+          <li><a href="{{ url_for('portfolio') }}">Our Services</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="logo">
+    <h1 class="icon"><a href=" {{ url_for('index') }} ">Quinn&nbsp;<span>Daisies</span></a></h1>
+  </div>
+
+  <div class="nav_links" id="NavLinks">
+    <ul>
+      <li><a href=" {{ url_for('posts') }} ">View Articles</a></li>
+      <li><a href="{{ url_for('portfolio') }}">Contact Us</a></li>
+      <li><a href="{{ url_for('portfolio') }}">About Us</a></li>
+      <li><a href="{{ url_for('portfolio') }}">Our Services</a></li>
+    </ul>
+  </div>
+
+  <div class="account">
+    <a href=" {{ url_for('construction') }} "><i class="fa fa-users"></i></a>
+    &nbsp;&nbsp;&nbsp;<a href="{{ url_for('construction') }}"><i class="fa fa-search"></i></a>
+  </div>
+</nav>  
+
+
